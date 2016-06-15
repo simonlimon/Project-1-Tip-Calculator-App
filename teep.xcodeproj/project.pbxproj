@@ -14,6 +14,8 @@
 		E7587B111D10A1B0003AA886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7587B0F1D10A1B0003AA886 /* LaunchScreen.storyboard */; };
 		E7587B1C1D10A1B0003AA886 /* teepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587B1B1D10A1B0003AA886 /* teepTests.swift */; };
 		E7587B271D10A1B0003AA886 /* teepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587B261D10A1B0003AA886 /* teepUITests.swift */; };
+		E7587B371D10B2B4003AA886 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587B361D10B2B4003AA886 /* SettingsViewController.swift */; };
+		E7587B391D10C388003AA886 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587B381D10C388003AA886 /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E7587B221D10A1B0003AA886 /* teepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7587B261D10A1B0003AA886 /* teepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teepUITests.swift; sourceTree = "<group>"; };
 		E7587B281D10A1B0003AA886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7587B361D10B2B4003AA886 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E7587B381D10C388003AA886 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				E7587B061D10A1B0003AA886 /* AppDelegate.swift */,
 				E7587B081D10A1B0003AA886 /* ViewController.swift */,
 				E7587B0A1D10A1B0003AA886 /* Main.storyboard */,
+				E7587B381D10C388003AA886 /* Circle.swift */,
+				E7587B361D10B2B4003AA886 /* SettingsViewController.swift */,
 				E7587B0D1D10A1B0003AA886 /* Assets.xcassets */,
 				E7587B0F1D10A1B0003AA886 /* LaunchScreen.storyboard */,
 				E7587B121D10A1B0003AA886 /* Info.plist */,
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7587B091D10A1B0003AA886 /* ViewController.swift in Sources */,
+				E7587B391D10C388003AA886 /* Circle.swift in Sources */,
 				E7587B071D10A1B0003AA886 /* AppDelegate.swift in Sources */,
+				E7587B371D10B2B4003AA886 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

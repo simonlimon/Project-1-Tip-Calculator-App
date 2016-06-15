@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Tip Calculator-->
+        <!--Teep-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="teep" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,50 +13,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jGI-kC-V5g">
-                                <rect key="frame" x="20" y="92" width="23" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="SFO-JY-iTQ">
+                                <rect key="frame" x="20" y="254" width="335" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wso-8j-w3c">
-                                <rect key="frame" x="268" y="145" width="87" height="21"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="22%"/>
+                                </segments>
+                                <color key="tintColor" red="0.95686274510000002" green="0.8980392157" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeTipValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="kQd-2Y-MHC"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" id="joT-fc-gXl" customClass="Circle" customModule="teep" customModuleProvider="target">
+                                <rect key="frame" x="112" y="381" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qgN-2w-RwD">
-                                <rect key="frame" x="20" y="145" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6GK-9c-jvc">
-                                <rect key="frame" x="263" y="250" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="ngZ-yq-tCQ">
-                                <rect key="frame" x="20" y="210" width="335" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="green">
+                                        <real key="value" value="153"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.95686274509803926" green="0.89803921568627454" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="Q2T-3c-T16">
-                                <rect key="frame" x="218" y="88" width="137" height="30"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7MM-ef-vJZ">
+                                <rect key="frame" x="149" y="420" width="76" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.5725490196078431" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14000000000000001" minValue="0.0" maxValue="0.29999999999999999" id="Q9Y-fF-rLJ">
+                                <rect key="frame" x="178" y="441" width="179" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="09a-Dc-uKs"/>
+                                    <action selector="sliderReleased:" destination="BYZ-38-t0r" eventType="touchDragExit" id="6NK-Qg-WgU"/>
+                                    <action selector="sliderReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWn-8y-XPg"/>
+                                    <action selector="sliderReleased:" destination="BYZ-38-t0r" eventType="touchCancel" id="n5B-CD-JLH"/>
+                                    <action selector="sliderReleased:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="vbq-d0-ezR"/>
+                                    <action selector="sliderTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="ur1-Ia-Njx"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wso-8j-w3c">
+                                <rect key="frame" x="121" y="440" width="132" height="29.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6GK-9c-jvc">
+                                <rect key="frame" x="20" y="595" width="335" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="tap to enter bill" textAlignment="center" minimumFontSize="17" id="Q2T-3c-T16">
+                                <rect key="frame" x="69" y="117" width="236" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.84705882349999995" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="qco-34-z6w"/>
                                 </connections>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="SFO-JY-iTQ">
-                                <rect key="frame" x="20" y="306" width="335" height="29"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b32-HI-4wE" appends="YES" id="QLU-Nn-q5l"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Teep" id="rJH-s9-b2Y">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="tla-Fy-cCz">
+                            <connections>
+                                <segue destination="yJI-um-Ryx" kind="push" id="IHi-MA-wPi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="billField" destination="Q2T-3c-T16" id="9jK-Ly-II4"/>
+                        <outlet property="circle" destination="joT-fc-gXl" id="9O6-xA-eHf"/>
+                        <outlet property="tipControl" destination="SFO-JY-iTQ" id="p08-kT-yTl"/>
+                        <outlet property="tipLabel" destination="Wso-8j-w3c" id="GjT-kp-y37"/>
+                        <outlet property="tipPercent" destination="7MM-ef-vJZ" id="OaC-zz-h9m"/>
+                        <outlet property="tipSlider" destination="Q9Y-fF-rLJ" id="VQC-53-Me4"/>
+                        <outlet property="totalLabel" destination="6GK-9c-jvc" id="C0Z-05-54P"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Fhe-sG-tk4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="b32-HI-4wE">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="fq1-CR-udW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="759.5" y="348.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="wzW-Ux-ChH">
+            <objects>
+                <viewController id="yJI-um-Ryx" customClass="SettingsViewController" customModule="teep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cK1-wQ-uB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="PLS-OH-VfV">
+                                <rect key="frame" x="20" y="124" width="335" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="18%"/>
@@ -64,43 +139,35 @@
                                     <segment title="22%"/>
                                 </segments>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rzi-ux-rI0"/>
+                                    <action selector="changeDefault:" destination="yJI-um-Ryx" eventType="valueChanged" id="aC5-gN-SSw"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yWN-K5-1yU">
-                                <rect key="frame" x="20" y="249" width="38" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uuX-QH-m3z">
+                                <rect key="frame" x="20" y="87" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="rJH-s9-b2Y"/>
+                    <navigationItem key="navigationItem" id="L8P-3K-nqu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="billField" destination="Q2T-3c-T16" id="9jK-Ly-II4"/>
-                        <outlet property="tipControl" destination="SFO-JY-iTQ" id="p08-kT-yTl"/>
-                        <outlet property="tipLabel" destination="Wso-8j-w3c" id="GjT-kp-y37"/>
-                        <outlet property="totalLabel" destination="6GK-9c-jvc" id="C0Z-05-54P"/>
+                        <outlet property="defaultTip" destination="PLS-OH-VfV" id="ZiT-e8-ZSl"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="7s5-9t-01i">
-                    <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="zar-3x-sk1"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpr-YI-XPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759.5" y="348.5"/>
+            <point key="canvasLocation" x="1250.5" y="347.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7DT-XH-6bT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zoE-f8-O3J" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OBW-bf-gck">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
